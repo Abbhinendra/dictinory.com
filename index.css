@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f5f5;
+    overflow-x: hidden;
+    width: 100vw;
+}
+
+::-webkit-scrollbar{
+    width: 1px;
+    height: 1px;
+    background-color: #f5f5f5;
+    border-radius: 26px;
+}
+header{
+    background-color: #008080;
+    padding: 20px;
+    color: white;
+}
+header h1{
+    font-size: 36px
+}
+main{
+    min-height: 100vh;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+
+}
+main form{
+    display: flex;
+    justify-content: center;
+}
+form input[type="text"]{
+    flex-grow: 1;
+
+}
+form input[type="text"],button[type="sumit"]{
+    
+border: none;
+font-size: 16px;
+font-weight: 600;
+border-radius: 6px;
+padding: calc(20px/2);
+}
+button{
+    background-color: #008080;
+     color: white;
+     margin-left: 10px;
+     padding: calc(20px/2);
+     border-radius: 6px;
+     cursor: pointer;
+     font-size: 16px;
+     font-weight: 600;
+}
+footer{
+    background-color: #008080;
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    color: white;
+    font-weight: 700;
+    padding: 20px;
+   
+}
+.result p{
+
+    margin-top: 10px
+}
+.result{
+    background-color: white;
+    padding: 20px;
+    border-radius: 6px;
+    margin-top: 20px;
+    box-shadow: 0px 0px 10px rgb(0,0,0,0.2);
+}
+.result p[class="pt"]{
+font-style: italic;
+color: #008080;
+margin-top:2px ;
+}
+.result div a{
+    background-color: #008080;
+    color: white;
+    padding: calc(20px/2);
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none
+}
+.result div{
+    margin-top: 20px;
+}
+.result li{
+    padding: calc(20px/6);
+    margin-left: 20px;
+}
+
+@media screen and (max-width: 600px) {
+   
+    main form{
+        flex-direction: column;
+    }
+  form button[type="submit"]{
+    margin-top: 10px;
+    margin-left: -1px;
+
+  }
+
+  }
+  @media screen and (max-width: 290px) {
+   
+   
+    header h1{
+        font-size: 26px
+    }
+
+  }
+  @media screen and (max-width: 282px) {
+    
+   
+    header h1{
+        font-size: 26px
+    }
+    footer{
+      
+        font-size: 16px;
+        font-weight: 600;
+       
+    }
+  }
+  @media screen and (max-width: 250px) {
+    
+   
+    header h1{
+        font-size: 26px
+    }
+    footer{
+      
+        font-size: 12px;
+        font-weight: 600;
+       
+    }
+  }
+  .result p[class="bold"]{
+    font-size: 1rem;
+    font-weight: 600;
+    }
+  
+   
